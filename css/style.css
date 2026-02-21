@@ -930,15 +930,11 @@ textarea { resize: none; }
     transform: translateY(-2px);
     border-color: rgba(0, 255, 204, 0.6);
   }
-  /* Garantizar que los íconos devicon colored NO sean sobreescritos */
-  .skills__skill i[class*="devicon-"] {
-    color: inherit !important; /* devicon colored usa sus propios colores inline */
+  /* Los íconos toman el color definido en su style="" del HTML.
+     NO se sobreescribe nada aquí — solo tamaño y alineación. */
+  .skills__skill i {
     font-size: 1.8rem;
-  }
-  /* Íconos Font Awesome dentro de skills: color neón */
-  .skills__skill i[class*="fa-"] {
-    color: #00ffcc;
-    font-size: 1.6rem;
+    flex-shrink: 0;
   }
 
 
