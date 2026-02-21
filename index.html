@@ -5,125 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Angelo Conterón | IT Engineer & Developer</title>
-    <meta name="description" content="Portfolio of Angelo Conterón, IT Engineering Student and Web Developer" />
-
+    
     <link rel="stylesheet" href="css/style.css" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    
+    <style>
+      body { background-color: #111; color: #fff; }
+      .heading-primary, .heading-sec__main, .about__content-title, .projects__row-content-title { color: #fff; }
+      .text-primary, .about__content-details-para, .projects__row-content-desc { color: #ccc; }
+      .home-hero, .about, .projects, .contact { background-color: #111; }
+      .contact__form-input { background-color: #222; color: #fff; border: 1px solid #444; }
+      .header { background-color: #000; }
+      .header__link { color: #fff; }
+    </style>
   </head>
-  <body>
+  <body class="theme-dark">
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/john-doe.png"
-              alt="Angelo Conteron Logo Image"
-              class="header__logo-img"
-            />
+            <img src="./assets/png/john-doe.png" alt="Angelo Conteron Logo Image" class="header__logo-img" />
           </div>
-          <span class="header__logo-sub">Angelo Conterón</span>
+          <span class="header__logo-sub" style="color:#fff;">Angelo Conterón</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
+            <li class="header__link-wrapper"><a href="./index.html" class="header__link">Home</a></li>
+            <li class="header__link-wrapper"><a href="./index.html#about" class="header__link">About</a></li>
+            <li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Projects</a></li>
+            <li class="header__link-wrapper"><a href="./index.html#contact" class="header__link">Contact</a></li>
           </ul>
         </div>
       </div>
     </header>
+
     <section class="home-hero">
       <div class="home-hero__content">
-        <h1 class="heading-primary">Hey, My name is Angelo Conterón</h1>
+        <h1 class="heading-primary">Hey, I'm Angelo Conterón</h1>
         <div class="home-hero__info">
           <p class="text-primary">
-            An Information Technology Engineering student at EPN building Full-Stack web and mobile applications. Passionate about software architecture, exploring AI image generation, and creating impactful tech products.
+            Information Technology Engineering student at EPN. I specialize in Full-Stack Development, Network Infrastructure, and IoT Systems. I build robust digital solutions from the database to the deployment.
           </p>
         </div>
         <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projects</a>
+          <a href="./#projects" class="btn btn--bg" style="background: #61DAFB; color: #000;">View Projects</a>
         </div>
-      </div>
-      <div class="home-hero__socials">
-        <div class="home-hero__social">
-          <a href="https://www.linkedin.com/in/angelo-conteron/" target="_blank" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/linkedin-ico.png"
-              alt="LinkedIn icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="https://github.com/Anghel01" target="_blank" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/github-ico.png"
-              alt="GitHub icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-      </div>
-      <div class="home-hero__mouse-scroll-cont">
-        <div class="mouse"></div>
       </div>
     </section>
+
     <section id="about" class="about sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main">About Me</span>
-          <span class="heading-sec__sub">
-            I am passionate about software development, problem-solving, and building intuitive applications from the ground up.
+          <span class="heading-sec__sub" style="color: #aaa;">
+            Bridging the gap between software development and IT infrastructure.
           </span>
         </h2>
         <div class="about__content">
@@ -131,205 +71,74 @@
             <h3 class="about__content-title">Get to know me!</h3>
             <div class="about__content-details">
               <p class="about__content-details-para">
-                Hey! It's <strong>Angelo</strong>, an <strong>Information Technology Engineering student</strong> in my final semesters at <strong>Escuela Politécnica Nacional (EPN)</strong> in Quito, Ecuador. I am currently looking for an <strong>Internship or Junior Developer</strong> role to apply my academic knowledge and keep growing in the IT industry.
+                I am a 7th-semester <strong>IT Engineering student at Escuela Politécnica Nacional</strong> in Quito. My academic and practical background spans across multiple disciplines, allowing me to understand technology not just from a programmer's perspective, but from an architectural standpoint.
               </p>
               <p class="about__content-details-para">
-                I love exploring new technologies. Aside from building web applications and learning server-side architecture, I have a strong interest in experimenting with <strong>AI image generation</strong>. Whether it's crafting the perfect frontend layout or setting up a database, I enjoy the entire development lifecycle. Feel free to <strong>contact</strong> me below!
+                Beyond coding web and mobile apps, I have hands-on experience designing <strong>Network Infrastructures</strong>, working with <strong>IoT (Internet of Things) systems</strong>, and configuring cloud deployments. I am actively looking for an internship to bring my problem-solving skills to real-world challenges.
               </p>
             </div>
-            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
-              >Contact</a
-            >
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact Me</a>
           </div>
           <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
+            <h3 class="about__content-title">Core Competencies</h3>
             <div class="skills">
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">React / React Native</div>
-              <div class="skills__skill">HTML5</div>
-              <div class="skills__skill">CSS3</div>
-              <div class="skills__skill">Node.js</div>
-              <div class="skills__skill">Express.js</div>
-              <div class="skills__skill">MongoDB</div>
-              <div class="skills__skill">SQL</div>
-              <div class="skills__skill">Git & GitHub</div>
-              <div class="skills__skill">AI Prompting</div>
+              <div class="skills__skill">Software Architecture</div>
+              <div class="skills__skill">Full-Stack Dev (React/Node)</div>
+              <div class="skills__skill">Networking & Routing</div>
+              <div class="skills__skill">IoT Systems</div>
+              <div class="skills__skill">Databases (SQL/NoSQL)</div>
+              <div class="skills__skill">API Integration</div>
+              <div class="skills__skill">Hardware-Software Integration</div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section id="projects" class="projects sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-            Here you will find some of the personal and academic projects that I have created, showcasing my technical skills and problem-solving abilities.
-          </span>
+          <span class="heading-sec__main">Projects & Experience</span>
         </h2>
 
         <div class="projects__content">
           <div class="projects__row">
             <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="FestiMap Ecuador Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
+              <img src="./assets/jpeg/project-mockup-example.jpeg" alt="FestiMap Ecuador" class="projects__row-img" />
             </div>
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">FestiMap Ecuador</h3>
               <p class="projects__row-content-desc">
-                A comprehensive platform for locating, exploring, and managing cultural events across Ecuador. Built with React, Node.js, and integrates Artificial Intelligence and Geolocation for smart itineraries.
+                A comprehensive web and mobile platform for locating cultural events across Ecuador. Built with a robust backend to handle geolocation data, user authentication, and interactive mapping.
               </p>
-              <a
-                href="https://github.com/Anghel01/festimap-ecuador"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >View on GitHub</a
-              >
+              <div style="font-size: 2rem; margin-bottom: 2rem;">
+                <i class="devicon-react-original colored"></i>
+                <i class="devicon-nodejs-plain colored"></i>
+                <i class="devicon-express-original" style="color: #fff;"></i>
+                <i class="devicon-mongodb-plain colored"></i>
+              </div>
+              <a href="https://github.com/Anghel01/festimap-ecuador" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Repository</a>
             </div>
           </div>
+
           <div class="projects__row">
             <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="SmartRest Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
+              <img src="./assets/jpeg/project-mockup-example.jpeg" alt="SmartRest System" class="projects__row-img" />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">SmartRest System</h3>
+              <h3 class="projects__row-content-title">SmartRest IoT System</h3>
               <p class="projects__row-content-desc">
-                An intelligent postural monitoring system developed as a university project at EPN. It tracks and analyzes user posture in real-time, bridging hardware sensors with a robust software interface.
+                An intelligent postural monitoring system developed at EPN. This project bridges hardware and software, using sensors to track data in real-time and feeding it into an analytical dashboard.
               </p>
-              <a
-                href="https://github.com/Anghel01"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >View GitHub Profile</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="CNM System Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">CNM Management System</h3>
-              <p class="projects__row-content-desc">
-                Collaborated on the Frontend and Backend development for the National Music Conservatory's management platform, streamlining administrative workflows and academic processes.
-              </p>
-              <a
-                href="https://github.com/Anghel01"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >View GitHub Profile</a
-              >
+              <div style="font-size: 2rem; margin-bottom: 2rem;">
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-python-plain colored"></i>
+                <i class="devicon-arduino-plain colored"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="contact" class="contact sec-pad dynamicBg">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-          <span class="heading-sec__sub heading-sec__sub--lt">
-            Feel free to contact me by submitting the form below or reaching out through LinkedIn. I will get back to you as soon as possible!
-          </span>
-        </h2>
-        <div class="contact__form-container">
-          <form action="#" class="contact__form">
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                class="contact__form-input"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
-              <input
-                required
-                placeholder="Enter Your Email"
-                type="text"
-                class="contact__form-input"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-                placeholder="Enter Your Message"
-                name="message"
-                id="message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn--theme contact__btn">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-    <footer class="main-footer">
-      <div class="main-container">
-        <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/angelo-conteron/">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="LinkedIn icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://github.com/Anghel01">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="GitHub icon"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">Angelo Conterón</h4>
-            <p class="main-footer__short-desc">
-              Information Technology Engineering student at EPN | Junior Full-Stack Web & Mobile Developer
-            </p>
-          </div>
-        </div>
-
-        <div class="main-footer__lower">
-          &copy; Copyright 2026. Template by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
-        </div>
-      </div>
-    </footer>
-
-    <script src="./index.js"></script>
   </body>
 </html>
